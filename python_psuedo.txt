@@ -1,0 +1,47 @@
+python_psuedo.txt
+
+
+    Q2:
+s0 = 0
+s1 = 1
+n = 8
+
+for i=0;i<8;i++;
+    s3= s1+s2
+    s1=s2
+    s2=s3
+    print(s3)
+return
+
+Q3:
+
+count even (list)
+for element in range(len(list))
+    if element % 2 = 0
+    count ++
+
+define list [x, y, ..., z]
+
+
+
+
+
+
+
+
+
+
+
+
+
+Learnt:
+
+    a = 1
+    b = 2
+    a, b = 1, 2
+
+    define default function parameters in method 
+
+    print and method call in one line
+
+    find concise way to do maths 
