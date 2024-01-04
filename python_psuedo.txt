@@ -40,7 +40,11 @@ i + 1 and goes up to the last element in the list. This ensures that each pair o
 elements is compared only once, avoiding unnecessary duplicate comparisons 
 (e.g., comparing element at index 2 with the element at index 1 after already comparing index 1 with 2).
 
+Q6: 
 
+for i in range(len(list1))
+for j in range(len(list2))
+    if list1[j] == list2[j]; 
 
 
 
@@ -59,3 +63,5 @@ Learnt:
     print and method call in one line
 
     find concise way to do maths 
+
+    for for i in range(len(list)) is the same as for i in list
