@@ -65,3 +65,50 @@ Learnt:
     find concise way to do maths 
 
     for for i in range(len(list)) is the same as for i in list
+
+
+
+Variance is a measure of how spread out the values in a dataset are:
+
+def calc_variance(arr):
+    mean_arr = ((np.sum(arr)) / len(arr)).round(2)
+    numerator = 0
+    diff_from_mean = []
+    for i in range(0, len(arr),1):
+        diff_from_mean.append(arr[i] - mean_arr)
+        numerator = numerator + (diff_from_mean[i]**2)
+    variance_x = numerator / len(arr)
+    return variance_x
+
+Compute the Mean:
+mean_arr is calculated as the sum of all elements in the array divided by the number of elements 
+in the array. The result is rounded to two decimal places.
+
+Calculate the Difference from the Mean:
+A list diff_from_mean is initialized to store the differences between each element of the array 
+and the mean. It calculates these differences by subtracting the mean from each element in the array.
+
+Calculate the Numerator for Variance:
+numerator is initialized to zero. It is used to accumulate the squared differences from the mean.
+
+Loop Through the Array:
+A for loop iterates through each element in the array.
+Inside the loop, the squared difference from the mean for each element is added to the numerator.
+
+Calculate Variance:
+variance_x is calculated by dividing the numerator by the number of elements in the array.
+
+Return the Result:
+The calculated variance (variance_x) is returned from the function.
+
+
+Q2
+
+x[x > 10] uses boolean indexing to select and print only those elements of x for which the 
+corresponding value in the boolean array is True.
+
+print(np.nonzero(x > 10)[0]): This line prints the indices of the elements in the array x that are 
+greater than 10. The x > 10 expression again creates a boolean array. np.nonzero(x > 10) returns the 
+indices of the True values in the boolean array. The [0] at the end extracts the indices from the 
+tuple returned by np.nonzero (since NumPy's nonzero returns a tuple of arrays, one for each dimension). 
+It prints the indices of elements in x that are greater than 10.

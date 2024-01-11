@@ -1,0 +1,18 @@
+NumPy_questions.txt
+
+
+
+create a random array
+100 real-valued elements between 1 and 5 
+Compute the 
+    average
+    population variance and population standard deviation
+    sample variance and sample standard deviation
+
+
+average: 
+(sum of all elements) / len(arr)
+
+
+sample variance calculation:
+
